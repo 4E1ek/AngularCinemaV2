@@ -1,0 +1,8 @@
+<h2>Foglalások listája</h2>
+<ul>
+  <li *ngFor="let booking of bookings">
+    Név: {{ booking.name }} | Film: {{ getMovieName(+booking.movie) }} | Székek: {{ booking.seats }} | Dátum: {{ booking.date }}
+    <button (click)="editBooking(booking.id)">Szerkesztés</button>
+    <button (click)="deleteBooking(booking.id)">Törlés</button>
+  </li>
+</ul>

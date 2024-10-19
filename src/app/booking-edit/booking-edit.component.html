@@ -1,0 +1,16 @@
+<h2>Foglalás szerkesztése</h2>
+<form *ngIf="booking" (ngSubmit)="updateBooking()">
+  <label for="name">Név:</label>
+  <input id="name" [(ngModel)]="booking.name" name="name" required>
+
+  <label for="movie">Film:</label>
+  <input id="movie" [(ngModel)]="booking.movie" name="movie" required>
+
+  <label for="seats">Székek száma:</label>
+  <input id="seats" type="number" [(ngModel)]="booking.seats" name="seats" required>
+
+  <label for="date">Dátum:</label>
+  <input id="date" type="date" [(ngModel)]="booking.date" name="date" required>
+
+  <button type="submit">Foglalás frissítése</button>
+</form>

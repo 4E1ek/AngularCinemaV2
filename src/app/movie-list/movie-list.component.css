@@ -1,0 +1,19 @@
+.movie-list {
+    display: flex;
+    flex-wrap: wrap; /* A sor megtörik, ha túl sok elem van */
+    gap: 1rem; /* Hézag az elemek között */
+    justify-content: center; /* Középre igazítja a filmeket */
+  }
+  
+  .movie-item {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    width: 200px; /* Szélesség megadása a filmeknek */
+  }
+  
+  .movie-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
